@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+}
+nav{
+    background-color: gray;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.main-menu>li{
+display: inline-block;
+ 
+/* list-style: none;  убрать точки списка*/
+
+}
+
+ul{
+
+    padding-inline-start: 0;
+}
+li{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none; /* убираем подчеркивания ссылок*/
+    padding: 15px;
+    color: white;
+    font-size: 1.5em;
+}
+section{
+    margin-top: 90px ;
+    border: 1px solid black;
+}
+
+
+.first-section{
+    background-color: orange;
+
+}
+
+.second-section{
+    background-color: aqua;
+}
+
+.dropdown{
+    background-color: silver;
+    position: absolute;
+    top: 72px;
+    display: none;
+    
+}
+.drop-trigger:hover .dropdown{
+    display: block;
+
+}
