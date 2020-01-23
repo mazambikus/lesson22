@@ -1,0 +1,30 @@
+nav{
+
+    width: 80px;
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: -113px;
+    transition: top 3s, background-color 2s linear 2s;
+    
+}
+
+nav a{
+
+    display: block;
+    color: rgb(255, 254, 254);
+    font-size: 1.5em;
+
+}
+
+body{
+
+    margin: 0;
+}
+
+nav:hover{
+
+    top: 0;
+    background-color: #1b1c1c;
+}

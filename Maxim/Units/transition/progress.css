@@ -1,0 +1,20 @@
+.container{
+
+    height: 20px;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+.container .progress{
+    
+    height: 20px;
+    background-color: silver;
+    width: 0;
+    transition: 8s;
+}
+
+.container:hover .progress{
+
+    width: 100%;
+}
