@@ -1,0 +1,52 @@
+.container{
+
+    width: 450px;
+    overflow: hidden;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+img{
+
+    position: relative;
+    left: -30px;
+    filter: brightness(80%);
+}
+.container:hover img{
+
+    left: 0;
+    filter: none;
+}
+
+.text{
+
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+p{
+
+    opacity: 0;
+}
+
+h2{
+
+    font-size: 2em;
+}
+
+.container:hover .text{
+
+    bottom: 50px;
+}
+
+.container:hover p{
+
+    opacity: 1;
+}

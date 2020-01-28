@@ -1,0 +1,72 @@
+Переходы и трансформации:
+
+
+(Переходы)
+transition: 5s;
+   подсвойства transition
+   transition-property: width; на что именно действует переход.
+   transition-duration: 5s; временной промежуток.
+   transition-timing-function: ease-in;(скорость перехода от одного состояния в другое( вначале медленно затем быстро двигаться или наоборот или так далее) можно расмотреть на cubic-bezler.com/#.17,.67,.83,.67)
+      ease-in - вначале медлено затем быстро
+      ease-out - вконце медленно
+      ease-in-out - вначале медленно и в конце медленно
+      cubic-bezier()  - переход произвольный
+      linear - линейное движение
+   transition-delay: 2s; - задержка перехода   
+
+   transition: all(свойства) 5s(длительность изменения) linear(скорость перехода); обезательно указывать длительность, всё остальное опционально. по умолчанию ease-in
+
+
+sdnjs.com 
+
+tympanus.net примеры hover
+
+
+Трансформации:
+
+transform: rotate(90deg);  по умолчанию вертится вокруг оси Z, можно rotateX(); rotateY();
+transform: translate(50px, 100px); смещение элемента в текущей позиции., можно translateX(); translateY(); translateZ(); любые единицы измерения.
+transform: scale(2); увеличит в 2 раза объект, если указать десятичное число уменьшит объект.  scaleX(1.5) - увеличит на половину ширину. scaleZ()- глубина
+transform: skew(); наклонить объекте
+transform: matrix(); 
+
+transform: perspective(800px);
+
+filter: ; - меняет изображение;
+blur() -размытие
+contrast: - контраст;
+brightness(); в %
+hue-rotate();
+grayscale();
+saturate(); - насыщенность %
+invert(); %
+grayscale(); серый. от 0 до 1,
+sepia(); в процентах %
+
+Shadow: ; создаёт тени.
+
+box-shadow: 3px 3px(по умолчанию вылазит снизу, при отрицательном значении справа), третье значение цвет;
+
+x, y 
+blur - размытие
+spread
+color - цвет RGB либо RGBa где "a" - прозрачность. значение до 1, чем ближе к 1 тем менее прозрачный
+insert - внутреняя тень
+initial
+
+box-shadow: 3px 3px 5px 3px black;
+text-shadow: 3px 3px 5px 3px black;
+
+
+
+Gradient: 
+переход от одново цвета плавно в другой.
+
+background: linear-gradient(blue, white, aqua); - линейный градиент, горизонтальный. для наклонного градиента перед цветами указываем градус поворота.
+
+background: radial-gradient(); - круговой градиент. цвет идет от середины к краям. либо так же применяются ключевые слова - at top, at bottom, можно указывать точную точку начала градиента в процентах (40% 50%) , так же ключевые слова closeat-side, closest-corner, farthest-corner
+
+повторяющийся градиент добавляется repeating 
+
+    
+
