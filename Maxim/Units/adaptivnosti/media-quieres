@@ -1,0 +1,15 @@
+@media                   ключевое слово медиа запроса / далее медиа запрос
+sreen / all / print варианты медиа запроса 
+and or not оператор
+() отслеживает ширину экрана
+{} тело запроса
+condition: min-width / max-width / width / height / min-height / max-height / orientation: portrait / landscape; условия
+aspect-ratio: 
+
+
+
+@media screen and (max-width(800px)){
+    nav{
+        display: none;
+    }
+}

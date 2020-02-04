@@ -1,0 +1,40 @@
+@keyframe (ключевое слово для создания кадра анимации) anumation_name (название анимации) {
+
+    from{width: 100px; height: 100px;} (начальное состояние анимации)
+    to {width: 200px; height: 100px;} (конечное состояние анимации)
+
+
+}
+
+
+@keyframe blah {
+
+    0% {}
+    100% {}
+    50% {}
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation: animation_name 5s;
+}
+
+
+animation_name: size_change;
+animation_duration: time / 5s;
+animation-timing-functon: ease, ease-in, ease-out, ease-in-oyt, linear, cubic-bezier()
+animation-delay: 1s; анимация с задержкой
+animation-iteration-count: 2, infinite; кол-во повторений.
+animation-direction: normal, reverse(от конца к началу), alternate(туда обратно), alternate-reverse(с конца в начало и обратно), ; направление движения.
+animation-play-state: running(обычная анимация), paused(остановка анимации)
+
+
+
+квадрат , по середине круг, от него по углам расходятся кружки и возвращаются обратно.
+
+loading.io
+365webresourse.com
+
+preeloader css в поисковике 

@@ -1,0 +1,29 @@
+button{
+    padding: 20px;
+    background-color: grey;
+    font-size: 1.5em;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    animation: jump 1s infinite alternate;
+    border-radius: 6px;
+
+
+}
+
+@keyframes jump{
+    from{
+        box-shadow: 0 0 5px gray;
+
+    }
+    to{
+        top: 150px;
+        box-shadow: 0 50px 50px gray;
+    }
+
+
+}
+
+button:hover{
+    animation-play-state: paused;
+}
